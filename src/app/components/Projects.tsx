@@ -13,7 +13,7 @@ const projects = [
     technologies: ["React 19", "Mantine UI", "NestJS", "TypeORM", "SQLite", "Ollama"],
     highlights: ["Stealth proxy", "Vision & voice", "Model manager", "Streaming"],
     repoUrl: "https://github.com/shehabnagy2020/whisper",
-    videoUrl: "https://github.com/shehabnagy2020/whisper/blob/master/Whisper-Tour.mp4",
+    videoUrl: "https://shehabnagy2020.github.io/whisper/",
   },
   {
     name: "Chatty",
@@ -24,7 +24,7 @@ const projects = [
     technologies: ["React 19", "Vite", "Mantine UI", "NestJS", "Socket.IO", "WebRTC"],
     highlights: ["Voice calls", "Real-time messaging", "File sharing", "Reactions"],
     repoUrl: "https://github.com/shehabnagy2020/chatty",
-    videoUrl: "https://github.com/shehabnagy2020/chatty/blob/master/chatty-tour.mp4",
+    videoUrl: "https://shehabnagy2020.github.io/chatty/",
   },
   {
     name: "Pokemon Explorer",
@@ -35,7 +35,7 @@ const projects = [
     technologies: ["React 19", "TypeScript", "Vite", "React Router", "PokeAPI"],
     highlights: ["Glassmorphic UI", "Evolution chains", "Dual pagination", "Stat bars"],
     repoUrl: "https://github.com/shehabnagy2020/pokemon",
-    videoUrl: "https://github.com/shehabnagy2020/pokemon/blob/main/Pokemon-Tour.mp4",
+    videoUrl: "https://shehabnagy2020.github.io/pokemon/",
   },
 ];
 
