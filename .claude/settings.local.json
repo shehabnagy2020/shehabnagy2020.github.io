@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Programming/**)",
+      "Bash(dir D:\\\\Programming)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(mv cv.pdf cv.pdf.tmp)",
+      "Bash(mv cv.pdf.tmp public/cv.pdf)",
+      "Bash(cp cv.pdf /tmp/cv.pdf.backup)",
+      "Bash(rm cv.pdf)"
+    ]
+  }
+}
