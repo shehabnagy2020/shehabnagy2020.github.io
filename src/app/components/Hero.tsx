@@ -118,8 +118,9 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/cv.pdf"
-              download
+              href="https://drive.google.com/file/d/1JFXo0yPQQKwgBSVTnvp6fNcLLfaljkho/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white font-medium text-sm transition-colors flex items-center gap-2"
             >
               <Download className="w-4 h-4" />
