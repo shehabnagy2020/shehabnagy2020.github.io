@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --accent: #f59e0b;
+  --accent-light: #fbbf24;
+  --secondary: #3730a3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-dark), var(--secondary));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent), var(--primary));
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3),
+              0 0 40px rgba(99, 102, 241, 0.1);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.4),
+              0 0 60px rgba(99, 102, 241, 0.2);
+}
+
+/* Animated background gradient */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #09090b, #0f0f1a, #0a0a12, #09090b);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
 }
