@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SquareMenu, ExternalLink, MessageSquare, Brain, Sparkles } from "lucide-react";
+import { SquareMenu, ExternalLink, MessageSquare, Brain, Sparkles, Terminal } from "lucide-react";
 
 const projects = [
   {
@@ -25,6 +25,17 @@ const projects = [
     highlights: ["Voice calls", "Real-time messaging", "File sharing", "Reactions"],
     repoUrl: "https://github.com/shehabnagy2020/chatty",
     videoUrl: "https://shehabnagy2020.github.io/chatty/",
+  },
+  {
+    name: "Free Claude Code",
+    tagline: "Self-Hosted AI Chat Proxy",
+    description: "A self-hosted Claude Code proxy with a web UI, streaming chat, multi-provider routing, Tavily web search, global memory, and session management. Designed for Raspberry Pi 4 deployment.",
+    icon: Terminal,
+    gradient: "from-amber-500 to-blue-600",
+    technologies: ["Python", "FastAPI", "React", "Vite", "SQLite", "Anthropic API"],
+    highlights: ["Streaming chat", "Multi-provider", "Web search", "Demo mode"],
+    repoUrl: "https://github.com/shehabnagy2020/free-claude-code",
+    videoUrl: "https://shehabnagy2020.github.io/free-claude-code/",
   },
   {
     name: "Pokemon Explorer",
@@ -57,7 +68,7 @@ export default function Projects() {
           <div className="w-16 h-0.5 bg-gradient-to-r from-indigo-500 to-amber-500 mx-auto" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-4 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={project.name}
