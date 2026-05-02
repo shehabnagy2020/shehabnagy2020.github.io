@@ -1,20 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SquareMenu, ExternalLink, MessageSquare, Brain, Sparkles, Terminal } from "lucide-react";
+import { SquareMenu, ExternalLink, MessageSquare, Sparkles, Terminal } from "lucide-react";
 
 const projects = [
-  {
-    name: "Whisper",
-    tagline: "The Stealth AI Mirror",
-    description: "A private, full-stack AI chat client that proxies Ollama through a NestJS backend, ensuring zero frontend-to-AI direct traffic. Features auth, chat sessions, markdown rendering, vision support, and voice input.",
-    icon: Brain,
-    gradient: "from-indigo-500 to-indigo-700",
-    technologies: ["React 19", "Mantine UI", "NestJS", "TypeORM", "SQLite", "Ollama"],
-    highlights: ["Stealth proxy", "Vision & voice", "Model manager", "Streaming"],
-    repoUrl: "https://github.com/shehabnagy2020/whisper",
-    videoUrl: "https://shehabnagy2020.github.io/whisper/",
-  },
   {
     name: "Chatty",
     tagline: "Real-time Chat Application",
@@ -68,7 +57,7 @@ export default function Projects() {
           <div className="w-16 h-0.5 bg-gradient-to-r from-indigo-500 to-amber-500 mx-auto" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-3 gap-5">
           {projects.map((project, index) => (
             <motion.div
               key={project.name}
